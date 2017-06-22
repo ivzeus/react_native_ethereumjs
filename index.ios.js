@@ -4,6 +4,7 @@
  * @flow
  */
 
+import './global';
 import React, { Component } from 'react';
 import {
   AppRegistry,
@@ -12,19 +13,17 @@ import {
   View
 } from 'react-native';
 
+import Wallet from './src/wallet';
+
 export default class react_native_ethereumjs extends Component {
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          Private key:
         </Text>
         <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
+          {Wallet()}
         </Text>
       </View>
     );
