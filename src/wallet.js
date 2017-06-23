@@ -1,5 +1,19 @@
+const crypto = require('crypto');
 const EtherWallet = require('ethereumjs-wallet');
 
-module.exports = function() {
-    return EtherWallet.generate().getPrivateKeyString();
+class Wallet {
+    constructor()   {
+
+    }
+
+    generatePrivateKey(option)   {
+        return EtherWallet.generate(option).getPrivateKeyString();
+    }
+
+    addressFromPrivateKey(privKey)  {
+
+    }
 }
+
+const etherWallet = new Wallet();
+export default etherWallet;

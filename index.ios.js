@@ -23,7 +23,7 @@ export default class react_native_ethereumjs extends Component {
           Private key:
         </Text>
         <Text style={styles.instructions}>
-          {Wallet()}
+          {Wallet.generatePrivateKey()}
         </Text>
       </View>
     );

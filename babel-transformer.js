@@ -39,7 +39,8 @@ const babelRC = {
                 tls: 'node-libs-browser/mock/tls',
                 tty: 'tty-browserify',
                 vm: 'vm-browserify',
-                zlib: 'browserify-zlib'
+                zlib: 'browserify-zlib',
+                pbkdf2: 'react-native-pbkdf2-shim'
             },
             throwForNonStringLiteral: true
         }]
